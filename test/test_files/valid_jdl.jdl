@@ -4,7 +4,7 @@ entity C {
   name String required
 }
 entity D {
-  myValue Integer min(42)
+  myValue Integer min(42) unique
 }
 
 relationship OneToOne {

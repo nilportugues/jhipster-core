@@ -263,8 +263,7 @@ validation
   / "max" space* "(" space* int:INTEGER space* ")" {return {key:'max', value:int};}
   / "min" space* "(" space* int:INTEGER space* ")" {return {key:'min', value:int};}
   / "pattern" space* "("  apostrophe regexp:REGEXP  apostrophe space* ")" {return {key:'pattern' , value:regexp};}
-
-
+  / "unique" {return {key:'unique', value:''};}
 
 apostrophe "apostrophe"
   = a:["|']
